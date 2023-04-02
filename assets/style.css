@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(10, 138, 176, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background-color: rgba(10, 138, 176, 255);
+    color: #ffffff;
+}
+
+header h1 {
+    position: relative;
+    color: rgba(10, 138, 176, 255);
+    border: 1px solid #73377b;
+    background-color: #73377b;
+    padding: 5px;
+    max-width: 75%;
+    left: -14px;
+    border-left-width: 78px;
+    font-size: 40px;
+}
+
+
+header>nav>.Header-Contact {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    font-size: 24px;
+    color: #73377b;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(0, 191, 255);
+}
+
+section {
+    position: relative;
+}
+
+.Text-over-pic {
+    position: absolute;
+    color: rgba(10, 138, 176, 255);
+    top: 329px;
+    right: 68px;
+    background-color: #73377b;
+    font-size: 40px;
+}
+
+.Coding-Pic {
+    width: 100%;
+    height: 400px;
+}
+
+main>.container2 {
+    display: grid;
+    border: solid white;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 20px
+}
+
+main>.container2>.Image-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 5px;
+    grid-gap: 22px;
+    color: #f0c89d;
+}
+
+main h1 {
+    font-size: 40px;
+    text-align: right;
+    border-right-style: solid;
+    border-color: white;
+    padding-right: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+main>nav>ul.Contact-me {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 20px;
+}
