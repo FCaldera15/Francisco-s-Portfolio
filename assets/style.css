@@ -101,10 +101,54 @@ main>nav>ul.Contact-me {
     justify-items: center;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 25px;
+    position: absolute;
+}
+
+h2 {
+    background-color: #73377b;
+    padding: 11px;
+    bottom: 717px;
+    left: 3px;
+}
+
+h3 {
+    background-color: #73377b;
+    padding: 11px;
+    left: 2px;
+    bottom: 347px;
+}
+
+h4 {
+    background-color: #73377b;
+    padding: 11px;
+    right: -4px;
+    bottom: 347px;
+}
+
+h5 {
+    background-color: #73377b;
+    padding: 11px;
+    left: 2px;
+    bottom: 22px;
+}
+
+h6 {
+    background-color: #73377b;
+    padding: 11px;
+    right: -3px;
+    bottom: 22px;
+}
 
 
 main>.container2 {
     display: grid;
+    margin-right: 17px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 300px 300px 300px;
     gap: 20px;
@@ -153,4 +197,69 @@ main>.container2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main h1 {
+        text-align: left;
+        border-style: none none solid solid;
+        border-color: white;
+    }
+
+    nav a {
+        font-size: 21px;
+    }
+
+    .Text-over-pic {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main>.container2 {
+        display: grid;
+        margin-right: 17px;
+        grid-template-columns: 312px 312px;
+        grid-template-rows: 2px 300px 300px 300px;
+        gap: 20px;
+    }
+
+    header h1 {
+        position: relative;
+        color: rgba(10, 138, 176, 255);
+        border: 1px solid #73377b;
+        background-color: #73377b;
+        padding: 5px;
+        max-width: 75%;
+        left: -75px;
+        border-left-width: 78px;
+        font-size: 32px;
+    }
+
+    header>nav>.Header-Contact {
+        display: flex;
+        list-style: inside;
+        margin-right: -98px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .Coding-Pic {
+        width: 666px;
+    }
+
+    .Text-over-pic {
+        display: none;
+    }
+
+    h2 {
+        background-color: #73377b;
+        padding: 11px;
+        bottom: 647px;
+        left: 3px;
+    }
 }
