@@ -32,7 +32,6 @@ header h1 {
 header>nav>.Header-Contact {
     display: flex;
     list-style: none;
-    justify-content: space-between;
     margin-right: 20px;
 }
 
@@ -68,17 +67,7 @@ section {
     height: 400px;
 }
 
-main>.container2 {
-    display: grid;
-    border: solid white;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px 300px 300px;
-    gap: 20px
-}
 
-main>.container2>.Image-1 {
-    grid-area: 1 / 1 / 2 / 2;
-}
 
 main {
     display: grid;
@@ -100,9 +89,68 @@ p {
     font-size: 20px;
 }
 
+main>nav.Contact-me-box {
+    display: grid;
+    align-items: center;
+}
+
 main>nav>ul.Contact-me {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-auto-flow: column;
     list-style: none;
-    margin-right: 20px;
+    justify-items: center;
+}
+
+
+
+main>.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 20px;
+    grid-template-areas:
+        "Image-1 Image-1"
+        "Image-1 Image-1"
+        "Image-2 Image-3"
+        "Image-4 Image-5";
+}
+
+.Image-1 {
+    grid-area: Image-1;
+    border: solid #73377b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Image-2 {
+    grid-area: Image-2;
+    border: solid #73377b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Image-3 {
+    grid-area: Image-3;
+    border: solid #73377b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Image-4 {
+    grid-area: Image-4;
+    border: solid #73377b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Image-5 {
+    grid-area: Image-5;
+    border: solid #73377b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
